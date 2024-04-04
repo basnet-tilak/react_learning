@@ -1,0 +1,35 @@
+
+
+.container {
+    display: flex;
+    height: 100%;
+  }
+  
+  #imgContainer{
+    background-color: #007bff;
+    border-radius: 20px;
+    padding: 15px;
+    width: 70%; /* Adjust the width as needed */
+    height: 610px;    /* initial height */
+    margin-top: 10px;
+    margin-right: 2px;
+    resize: both;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+  
+  .registrationContainer {
+    
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 430px;
+    margin-right: 430px;
+
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-right: 55px;
+    padding-bottom: 30px;
+    background-color: #f0d5d5;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(47, 45, 45, 0.1);
+}

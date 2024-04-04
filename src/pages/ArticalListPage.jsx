@@ -1,7 +1,7 @@
 
 const ArticalListPage = () =>{
     return(
-        <h1> This is the ArticalListPage</h1>
+        <h1> This is the Artical List Page</h1>
     );
 }
 
