@@ -3,9 +3,8 @@
 const NotFoundPage = () =>{
     return(
         <>
-            <h1>This is NotFoundPage page </h1>
+            <h1> page not found </h1>
         </>
     )
 }
-
 export default NotFoundPage;
