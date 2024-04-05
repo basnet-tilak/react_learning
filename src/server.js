@@ -20,13 +20,11 @@ app.put('/api/articles/:name/upvote', (req, res) =>{
     const article = articleInfo.find(a => a.name == name);
     if(article){
         article.upvotes += 1;
-        res.send(`The ${name} article now has ${article.upvotes} upvotes!!`);
+        res.send(`The ${name} article now has ${article.upvotes} upvotes `);
     }else{
         res.send("That article is doesn\t exit");
     }
 });
-
-
 
 app.get('/hello', (req, res) => {
     res.send(`Hello ! ${req.body.name}`);
@@ -41,10 +39,7 @@ app.get('/hello/:name',  (req, res) =>{
 
 
 
-
-
-
-app.listen(8000, () =>{
-    console.log(`Server is listening 8000`);
+app.listen(3000, () =>{
+    console.log(`Server is listening 3000`);
 });
 
