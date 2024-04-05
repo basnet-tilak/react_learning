@@ -3,14 +3,13 @@
   .registrationContainer {
     margin-top: 30px;
     margin-bottom: 10px;
-    margin-left: 430px;
-    margin-right: 430px;
+    margin-left: 490px;
+    margin-right: 490px;
 
     padding-top: 30px;
     padding-left: 45px;
     padding-right: 55px;
     padding-bottom: 30px;
     background-color: #a18c8c;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(47, 45, 45, 0.1);
+    border-radius: 25px;
 }

@@ -46,7 +46,7 @@ label {
     text-align: center;
 }
 
-input[type="text"],
+input[type="text"],input[type="email"],
 input[type="password"] {
     width: 100%;
     font-size: 16px;

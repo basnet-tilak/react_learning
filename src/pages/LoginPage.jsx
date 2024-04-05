@@ -9,7 +9,7 @@ const LoginPage = () => {
   const handleSubmit = e => {
     e.preventDefault ();
     alert (`Username: ${username}, Password: ${password}`);
-    // Here you can perform any further actions like sending the data to a server for authentication
+    // Here you can perform any further actions like sending the data to a bonjourserver for authentication
   };
 
   useEffect (() => {
@@ -50,7 +50,7 @@ const LoginPage = () => {
           <button type="submit">Login</button>
           <br />
           <a href="/registration" id="linkRegistration">
-            If you do not have an account create an account{' '}
+            If you do not have an account create an account
           </a>
         </form>
       </div>
