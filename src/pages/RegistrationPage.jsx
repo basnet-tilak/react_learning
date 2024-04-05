@@ -1,38 +1,72 @@
 
-import "../styles/RegistrationPage.css"
+import { useState } from 'react';
+import '../styles/RegistrationPage.css'
 
 const RegistrationPage = () => {
+
+    const [formData, setFormData] = useState({
+        username: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Here you can perform validation and submission logic
+        console.log(formData);
+    };
+
     return (
-        <>
-            <div class="registrationContainer">
-
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" required />
+        <div className='registrationContainer'>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label>Username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        value={formData.username}
+                        onChange={handleChange}
+                    />
                 </div>
-
-                <div class="form-group">
-                    <label for="Full Name">Full-Name</label>
-                    <input type="text" id="username" name="username" required />
+                <div>
+                    <label>Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
                 </div>
-
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required />
+                <div>
+                    <label>Password</label>
+                    <input
+                        type="password"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                    />
                 </div>
-
-                <div class="form-group">
-                    <label for="contact">Contact</label>
-                    <input type="number" id="contact" name="contact" required />
-                </div>
-
-                <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address" required />
+                <div>
+                    <label>Confirm Password</label>
+                    <input
+                        type="password"
+                        name="confirmPassword"
+                        value={formData.confirmPassword}
+                        onChange={handleChange}
+                    />
                 </div>
                 <button type="submit">Register</button>
-            </div>
-        </>
-    )
-}
+            </form>
+        </div>
+    );
+};
 export default RegistrationPage;

@@ -6,7 +6,6 @@ import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import LoginPage from './pages/LoginPage';
 import NavBar from './NavBar';
-import './styles/App.css'
 import RegistrationPage from './pages/RegistrationPage';
 
 const App = () => {

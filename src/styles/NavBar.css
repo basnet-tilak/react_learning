@@ -1,10 +1,10 @@
 
 
 #topnav {
-    background-color: #adadb9; /* Add a black background color */
+    background-color: #bdbdc9; /* Add a black background color */
     overflow: hidden; /* Hide any overflowing content */ 
     border-radius: 10px;
-
+    
     /* this  nav-ul is inside the topnav id */
     #nav-ul li{
         display: inline;
