@@ -6,9 +6,17 @@ const ArticlePage = () => {
   const article = articles.find (article => article.id === parseInt (id));
 
   if (!article) {
-    return <div> <h1> Article with number with param  </h1> </div>;
+    return (
+      <div>
+
+        <h4>    
+            This is article page if you want read the article, <br/>
+            Article must with param  like .... localhost:3000/article/1 or 2
+        </h4>
+      </div>
+    );
   }
-  
+
   const {name, title, content} = article;
 
   return (
